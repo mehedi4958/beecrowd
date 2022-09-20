@@ -8,8 +8,9 @@ void main() {
     if(i % 2 != 0){
       print(i);
       count++;
-      if(count == 6)
+      if(count == 6) {
         break;
+      }
     }
   }
 }

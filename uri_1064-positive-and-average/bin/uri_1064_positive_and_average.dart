@@ -2,11 +2,11 @@ import 'dart:io';
 
 void main() {
   int i;
-  int count = 0;
-  double sum = 0;
-  List L = List.filled(6, 0);
+  var count = 0;
+  var sum = 0;
+  var L = List.filled(6, 0);
   for(i = 0; i < L.length; i++){
-    L[i] = double.parse(stdin.readLineSync()!);
+    L[i] = double.parse(stdin.readLineSync()!) as int;
     if(L[i]>0){
       sum += L[i];
       count += 1;
