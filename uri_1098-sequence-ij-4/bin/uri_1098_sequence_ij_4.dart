@@ -1,9 +1,9 @@
 void main() {
-  double x = 0;
-  double y = 1;
+  var x = 0.0;
+  var y = 1.0;
 
-  for(double i = x; i<=2.1; i+= .2){
-    for(double j=y; j <= y + 2; j++){
+  for(var i = x; i<=2.1; i+= .2){
+    for(var j=y; j <= y + 2; j++){
       if(i==0 || i==1 || i>=1.9){
           print('I=${i.toStringAsFixed(0)} J=${j.toStringAsFixed(0)}');
       }else{

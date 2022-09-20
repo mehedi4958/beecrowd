@@ -1,9 +1,9 @@
 import 'dart:io';
 
 void  main() {
-  String s = double.parse(stdin.readLineSync()!).toStringAsFixed(2);
-  double salary = double.parse(s);
-  
+  var s = double.parse(stdin.readLineSync()!).toStringAsFixed(2);
+  var salary = double.parse(s);
+
   if (salary <= 2000.00) {
     print('Isento');
   }

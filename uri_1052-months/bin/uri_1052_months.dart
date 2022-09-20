@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  int number = int.parse(stdin.readLineSync()!);
+  var number = int.parse(stdin.readLineSync()!);
 
   switch(number){
     case 1: print('January'); break;

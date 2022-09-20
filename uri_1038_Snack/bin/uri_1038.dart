@@ -1,12 +1,12 @@
 import 'dart:io';
 
 void main() {
-  String s = stdin.readLineSync()!;
+  var s = stdin.readLineSync()!;
   List S = s.split(' ');
-  int prdCode = int.parse(S[0]);
-  int prdQuantity = int.parse(S[1]);
+  var prdCode = int.parse(S[0]);
+  var prdQuantity = int.parse(S[1]);
   String price;
-  
+
   if(prdCode == 1) {
     price = (prdQuantity * 4.00).toStringAsFixed(2);
   }

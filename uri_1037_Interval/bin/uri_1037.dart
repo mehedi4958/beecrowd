@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  double x = double.parse(stdin.readLineSync()!);
+  var x = double.parse(stdin.readLineSync()!);
 
   if(x>=0 && x<=25){
     print('Intervalo [0,25]');

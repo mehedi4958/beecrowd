@@ -1,8 +1,8 @@
 import 'dart:io';
 
 void main() {
-  String s = stdin.readLineSync()!;
-  double salary = double.parse(s);
+  var s = stdin.readLineSync()!;
+  var salary = double.parse(s);
 
   if(salary <= 400.0){
     print('Novo salario: ${(salary*1.15).toStringAsFixed(2)}\nReajuste ganho: ${(salary*.15).toStringAsFixed(2)}\nEm percentual: 15 %');

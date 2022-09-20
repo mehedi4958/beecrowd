@@ -1,9 +1,7 @@
 import 'dart:io';
 
-import 'dart:math';
 
 void main() {
-  int sum = 0;
   for(int i = 0;;i++){
     String s = stdin.readLineSync()!;
     List l = s.split(' ');

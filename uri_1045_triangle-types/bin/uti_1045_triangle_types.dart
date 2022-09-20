@@ -3,17 +3,17 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  String s = stdin.readLineSync()!;
+  var s = stdin.readLineSync()!;
   List S = s.split(' ');
-  var n = new List<double>.filled(3, 0);
+  var n = List<double>.filled(3, 0);
 
-  for(int i = 0; i < 3; i++) {
+  for(var i = 0; i < 3; i++) {
     n[i] = double.parse(S[i]);
   }
   n.sort();
-  double A = n[0];
-  double B = n[1];
-  double C = n[2];
+  var A = n[0];
+  var B = n[1];
+  var C = n[2];
   if(C>=A+B){
     print('NAO FORMA TRIANGULO');
   }else {

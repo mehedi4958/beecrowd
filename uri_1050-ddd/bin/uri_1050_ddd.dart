@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  int code = int.parse(stdin.readLineSync()!);
+  var code = int.parse(stdin.readLineSync()!);
 
   switch(code){
     case 61:

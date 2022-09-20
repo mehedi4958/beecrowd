@@ -1,11 +1,11 @@
 import 'dart:io';
 
 void main() {
-  String s = stdin.readLineSync()!;
+  var s = stdin.readLineSync()!;
   List S = s.split(' ');
-  double x = double.parse(S[0]);
-  double y = double.parse(S[1]);
-  
+  var x = double.parse(S[0]);
+  var y = double.parse(S[1]);
+
   if(x==0 && y==0){
     print('Origem');
   }

@@ -1,18 +1,18 @@
 import 'dart:io';
 
 void main() {
-  String a = stdin.readLineSync()!;
-  int A = int.parse(a);
+  var a = stdin.readLineSync()!;
+  var A = int.parse(a);
 
-  String b = stdin.readLineSync()!;
-  int B = int.parse(b);
+  var b = stdin.readLineSync()!;
+  var B = int.parse(b);
 
-  String c = stdin.readLineSync()!;
-  int C = int.parse(c);
+  var c = stdin.readLineSync()!;
+  var C = int.parse(c);
 
-  String d = stdin.readLineSync()!;
-  int D = int.parse(d);
+  var d = stdin.readLineSync()!;
+  var D = int.parse(d);
 
-  int m = (A * B - C * D);
+  var m = (A * B - C * D);
   print('DIFERENCA = $m');
 }

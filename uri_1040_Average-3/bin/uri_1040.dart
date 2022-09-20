@@ -1,17 +1,17 @@
 import 'dart:io';
 
 void main() {
-  String s = stdin.readLineSync()!;
+  var s = stdin.readLineSync()!;
   List S = s.split(' ');
 
-  double N1 = double.parse(S[0]);
-  double N2 = double.parse(S[1]);
-  double N3 = double.parse(S[2]);
-  double N4 = double.parse(S[3]);
+  var N1 = double.parse(S[0]);
+  var N2 = double.parse(S[1]);
+  var N3 = double.parse(S[2]);
+  var N4 = double.parse(S[3]);
 
-  double mid = (N1*2 + N2*3 + N3*4 + N4*1) / (2 + 3 + 4 + 1);
+  var mid = (N1*2 + N2*3 + N3*4 + N4*1) / (2 + 3 + 4 + 1);
 
-  String media = mid.toStringAsFixed(1);
+  var media = mid.toStringAsFixed(1);
 
   if(mid >= 7.0) {
     print('Media: $media\nAluno aprovado.');
@@ -22,9 +22,9 @@ void main() {
   }
   else {
 
-    double doexam = double.parse(stdin.readLineSync()!);
-    String fVal = ((mid+doexam)/2).toStringAsFixed(1);
-    double med = double.parse(fVal);
+    var doexam = double.parse(stdin.readLineSync()!);
+    var fVal = ((mid+doexam)/2).toStringAsFixed(1);
+    var med = double.parse(fVal);
 
     print('Media: $media\nAluno em exame.');
     print('Nota do exame: $doexam');

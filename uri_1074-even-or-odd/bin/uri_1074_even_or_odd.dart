@@ -1,13 +1,13 @@
 import 'dart:io';
 
 void main() {
-  int N = int.parse(stdin.readLineSync()!);
-  List L = List.filled(N, 0);
-  for (int i = 0; i < N; i++) {
-    int number = int.parse(stdin.readLineSync()!);
+  var N = int.parse(stdin.readLineSync()!);
+  var L = List.filled(N, 0);
+  for (var i = 0; i < N; i++) {
+    var number = int.parse(stdin.readLineSync()!);
     L[i] = number;
     }
-  for(int i = 0; i < L.length; i++){
+  for(var i = 0; i < L.length; i++){
     if(L[i] == 0) {
       print('NULL');
     }

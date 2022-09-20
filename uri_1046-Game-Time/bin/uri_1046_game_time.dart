@@ -1,11 +1,11 @@
 import 'dart:io';
 
 void main() {
-  String s = stdin.readLineSync()!;
+  var s = stdin.readLineSync()!;
   List S = s.split(' ');
-  
-  int startTime = int.parse(S[0]);
-  int endTime = int.parse(S[1]);
+
+  var startTime = int.parse(S[0]);
+  var endTime = int.parse(S[1]);
   int? totalTime;
   if(startTime == endTime){
     totalTime = 24;

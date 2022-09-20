@@ -25,12 +25,12 @@ void main() {
 
   int difTime = (((endDay * 24 * 3600) + (list2[0] * 3600) + (list2[1] * 60) + list2[2]) - ((startDay * 24 * 3600) + (list1[0] * 3600) + (list1[1] * 60) + list1[2])).toInt();
 
-  int days = (difTime/(3600*24)).toInt();
+  int days = difTime~/(3600*24);
   difTime = (difTime % (3600 * 24));
-  int hours = (difTime/3600).toInt();
+  int hours = difTime~/3600;
   difTime = difTime % 3600;
-  int mins = (difTime/60).toInt();
+  int mins = difTime~/60;
   int secs = difTime % 60;
-  
+
   print('$days dia(s)\n$hours hora(s)\n$mins minuto(s)\n$secs segundo(s)');
 }

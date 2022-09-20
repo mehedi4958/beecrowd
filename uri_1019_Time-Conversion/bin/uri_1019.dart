@@ -1,12 +1,12 @@
 import 'dart:io';
 
 void main() {
-  int secs = int.parse(stdin.readLineSync()!);
+  var secs = int.parse(stdin.readLineSync()!);
 
-  int hrs = (secs / 3600).toInt();
+  var hrs = secs ~/ 3600;
   secs = secs % 3600;
 
-  int mins = (secs / 60).toInt();
+  var mins = secs ~/ 60;
 
   secs = secs % 60;
 
