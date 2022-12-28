@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   final list = List.generate(12, (index) => List<double>.filled(12, 0));
-  int l = int.parse(stdin.readLineSync()!);
+  int c = int.parse(stdin.readLineSync()!);
   String letter = stdin.readLineSync()!;
 
   double sum = 0;
@@ -14,7 +14,7 @@ void main() {
   }
 
   for (int i = 0; i < list.length; i++) {
-    sum += list[l][i];
+    sum += list[i][c];
   }
   if (letter == 'S') {
     print(sum.toStringAsFixed(1));
