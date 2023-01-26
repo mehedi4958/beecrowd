@@ -1,8 +1,6 @@
 import 'dart:io';
 
 void main() {
-  //final stringBuffer = StringBuffer();
-
   int n = int.parse(stdin.readLineSync()!);
 
   while (n > 0) {
@@ -24,20 +22,14 @@ void main() {
     for (int i = 0; i < list.length; i++) {
       for (int j = 0; j < list.length; j++) {
         if (j < 1) {
-          // stringBuffer.write('  ${list[i][j]}');
-          stdout.write('  ${list[i][j]}');
+          stdout.write('${list[i][j]}'.padLeft(3, ' '));
         } else {
-          //stringBuffer.write('   ${list[i][j]}');
-          stdout.write('   ${list[i][j]}');
+          stdout.write(' ${'${list[i][j]}'.padLeft(3, ' ')}');
         }
       }
-      //stringBuffer.write('\n');
       print('');
     }
-
-    //print(stringBuffer);
     print('');
-    //stringBuffer.clear();
     n = int.parse(stdin.readLineSync()!);
   }
 }
